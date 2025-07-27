@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 replit-gradient rounded-lg flex items-center justify-center">
                 <Camera className="text-white" size={16} />
               </div>
               <span className="text-xl font-bold">AI Caption Studio</span>

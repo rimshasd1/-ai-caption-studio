@@ -21,10 +21,10 @@ const toneOptions = [
 ];
 
 const toneColors = {
-  witty: "bg-yellow-100 text-yellow-600",
-  poetic: "bg-purple-100 text-purple-600",
-  professional: "bg-blue-100 text-blue-600",
-  casual: "bg-green-100 text-green-600",
+  witty: "bg-yellow-100 dark:bg-yellow-900/20 text-yellow-600 dark:text-yellow-400",
+  poetic: "bg-purple-100 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400",
+  professional: "bg-blue-100 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400",
+  casual: "bg-green-100 dark:bg-green-900/20 text-green-600 dark:text-green-400",
 };
 
 export default function CaptionGenerator() {

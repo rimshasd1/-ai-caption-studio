@@ -19,7 +19,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 replit-gradient rounded-lg flex items-center justify-center">
               <Camera className="text-white text-sm" size={16} />
             </div>
             <span className="text-xl font-bold text-primary">AI Caption Studio</span>

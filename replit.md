@@ -7,6 +7,7 @@ AI Caption Studio is a full-stack web application that generates AI-powered soci
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preference: Use Replit's brand colors and design system.
 
 ## System Architecture
 
@@ -74,6 +75,12 @@ The application follows a modern full-stack architecture with clear separation b
 - **Radix UI**: Accessible component primitives for complex UI elements
 - **Lucide React**: Icon library for consistent iconography
 - **React Icons**: Additional icon sets for social media branding
+
+### Design System
+- **Color Palette**: Replit brand colors (purple, orange, blue, green, yellow)
+- **Typography**: IBM Plex Sans font family for consistent branding
+- **Primary Colors**: Purple (#A855F7) and Orange (#FF8A4C) gradients
+- **Dark Mode**: Full support with Replit-themed color variations
 
 ### Development Tools
 - **Replit Integration**: Custom plugins for development environment optimization

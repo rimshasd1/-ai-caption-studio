@@ -23,22 +23,22 @@ export default function Hero() {
         {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
-            <div className="icon-container bg-secondary/10 mx-auto mb-4">
-              <Sparkles className="text-secondary" size={24} />
+            <div className="icon-container bg-purple-100 dark:bg-purple-900/20 mx-auto mb-4">
+              <Sparkles className="text-purple-600 dark:text-purple-400" size={24} />
             </div>
             <h3 className="font-semibold text-primary mb-2">AI-Powered</h3>
             <p className="text-muted-foreground text-sm">Advanced algorithms analyze your content to generate contextually relevant captions</p>
           </div>
           <div className="bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
-            <div className="icon-container bg-accent/10 mx-auto mb-4">
-              <Palette className="text-accent" size={24} />
+            <div className="icon-container bg-orange-100 dark:bg-orange-900/20 mx-auto mb-4">
+              <Palette className="text-orange-600 dark:text-orange-400" size={24} />
             </div>
             <h3 className="font-semibold text-primary mb-2">Multiple Tones</h3>
             <p className="text-muted-foreground text-sm">Choose from witty, poetic, professional, and more to match your brand voice</p>
           </div>
           <div className="bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
-            <div className="icon-container bg-purple-100 mx-auto mb-4">
-              <Zap className="text-purple-600" size={24} />
+            <div className="icon-container bg-blue-100 dark:bg-blue-900/20 mx-auto mb-4">
+              <Zap className="text-blue-600 dark:text-blue-400" size={24} />
             </div>
             <h3 className="font-semibold text-primary mb-2">Instant Results</h3>
             <p className="text-muted-foreground text-sm">Get multiple caption variations in seconds, ready to copy and use</p>
