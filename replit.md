@@ -61,15 +61,16 @@ The application follows a modern full-stack architecture with clear separation b
 2. **Form Validation**: Client-side validation using Zod schemas
 3. **API Request**: FormData submission to `/api/captions/generate` endpoint
 4. **Image Processing**: Server converts uploaded images to base64 for AI processing
-5. **AI Generation**: OpenAI GPT-4o processes description and image to generate captions
+5. **AI Generation**: Hugging Face DialoGPT processes description to generate captions with fallback templates
 6. **Response Formatting**: Results formatted with tone, text, character count, and hashtags
 7. **UI Display**: Generated captions displayed with copy/export functionality
 
 ## External Dependencies
 
 ### AI Services
-- **OpenAI API**: GPT-4o model for caption generation and image analysis
-- **API Key Management**: Environment variable configuration for API authentication
+- **Hugging Face API**: Microsoft DialoGPT-medium model for caption generation via free inference API
+- **Fallback Generation**: Smart template-based caption generation when API is unavailable
+- **No API Keys Required**: Uses Hugging Face's free public inference endpoint
 
 ### UI Libraries
 - **Radix UI**: Accessible component primitives for complex UI elements
@@ -106,5 +107,5 @@ The application follows a modern full-stack architecture with clear separation b
 
 ### Environment Configuration
 - **Database**: PostgreSQL with Neon Database serverless driver
-- **API Keys**: OpenAI API key required for caption generation
+- **AI Service**: Hugging Face free inference API with intelligent fallbacks
 - **Build Process**: Single command build for both client and server
