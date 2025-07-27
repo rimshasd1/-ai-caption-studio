@@ -260,7 +260,7 @@ export default function CaptionGenerator() {
                   const IconComponent = toneOption?.icon || Sparkles;
                   
                   return (
-                    <div key={index} className="caption-card">
+                    <div key={index} className="caption-card group">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center space-x-2">
                           <div className={cn(
