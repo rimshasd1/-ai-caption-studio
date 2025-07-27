@@ -1,5 +1,5 @@
 import { Camera } from "lucide-react";
-import { SiTwitter, SiInstagram, SiLinkedin } from "react-icons/si";
+import { SiX, SiInstagram, SiLinkedin } from "react-icons/si";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -24,7 +24,7 @@ export default function Footer() {
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="Twitter"
               >
-                <SiTwitter className="text-white" size={16} />
+                <SiX className="text-white" size={16} />
               </a>
               <a 
                 href="#" 

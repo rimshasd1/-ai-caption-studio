@@ -1,9 +1,10 @@
-import type { Express } from "express";
+import type { Express, Request } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { generateCaptionRequestSchema } from "@shared/schema";
 import { generateCaptions } from "./services/openai";
 import multer from "multer";
+import type { ZodError } from "zod";
 
 // Configure multer for file uploads
 const upload = multer({
@@ -63,17 +64,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Caption generation error:", error);
       
-      if (error.name === 'ZodError') {
+      if (error instanceof Error && error.name === 'ZodError') {
         return res.status(400).json({
           success: false,
           message: "Invalid request data",
-          errors: error.errors
+          errors: (error as ZodError).errors
         });
       }
       
       res.status(500).json({
         success: false,
-        message: error.message || "Failed to generate captions"
+        message: error instanceof Error ? error.message : "Failed to generate captions"
       });
     }
   });

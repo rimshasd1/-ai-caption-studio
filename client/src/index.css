@@ -90,7 +90,7 @@
 
   .caption-card {
     @apply bg-card rounded-2xl p-6 shadow-sm border border-border;
-    @apply hover:shadow-lg transition-all duration-300 group;
+    @apply hover:shadow-lg transition-all duration-300;
   }
 
   .copy-button {
